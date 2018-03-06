@@ -1,0 +1,30 @@
+
+<h3>con components</h3>
+
+
+<div ng-repeat="tarea in ctl.tareas">
+  <ng-tarea></ng-tarea>
+</div>
+
+<br>
+
+
+<h3>con diseño css</h3>
+<table>
+          <theader>
+          <th>Nombre</th>
+          <th>Descripcion</th>
+          <th>Estatus</th>
+          <th>Opciones</th>
+          </theader>
+          <tbody>
+          <tr ng-repeat="t in ctl.tareas">
+            <td><a href="#!/tarea/{{t.id}}" >{{t.nombre}}</a> </td>
+            <td>{{t.descripcion}}</td>
+              <td>{{t.estatus}}</td>
+            <td>
+            </td>
+          </tr>
+          </tbody>
+</table>
+      
